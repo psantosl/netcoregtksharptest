@@ -6,9 +6,6 @@ namespace gtktest
 {
     class MainWindow : Window
     {
-
-        int mCounter;
-
         public MainWindow() : base(WindowType.Toplevel) 
         {
             VBox box= new VBox();
@@ -27,5 +24,7 @@ namespace gtktest
 
             this.DeleteEvent += (sender, e) => {Console.WriteLine("good bye"); Application.Quit();};
         }
+
+        int mCounter;
     }
 }
